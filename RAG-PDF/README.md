@@ -1,5 +1,5 @@
 # Chat with PDF - Generative AI Application
-## Built Using Langchain, Python, Docker, Streamlit
+## Built Using Google Gemini, Langchain, Python, Docker, Streamlit
 ## Models used:
     embedding-001
     gemini-1.5-flash
