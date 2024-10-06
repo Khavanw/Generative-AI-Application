@@ -13,7 +13,17 @@ In this hands-on tutorial, we will demonstrate the following:
 
 
 ## Architecture
-![image info](./Bedrock-ChatWithPdf.png)
+graph TD
+    A[Multiple PDF Documents] --> B[Langchain]
+    B --> C[Google Gemini Pro]
+    D[User Query] --> B
+    C --> E[Response]
+    
+    style A fill:#ff9999,stroke:#333,stroke-width:2px
+    style B fill:#99ccff,stroke:#333,stroke-width:2px
+    style C fill:#99ff99,stroke:#333,stroke-width:2px
+    style D fill:#ffff99,stroke:#333,stroke-width:2px
+    style E fill:#ffcc99,stroke:#333,stroke-width:2px
 
 ## ADMIN Application:
     - Build Admin Web application where AdminUser can upload the pdf.
