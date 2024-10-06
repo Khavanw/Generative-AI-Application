@@ -13,23 +13,13 @@ In this hands-on tutorial, we will demonstrate the following:
 
 
 ## Architecture
-graph TD
-    A[Multiple PDF Documents] --> B[Langchain]
-    B --> C[Google Gemini Pro]
-    D[User Query] --> B
-    C --> E[Response]
-    
-    style A fill:#ff9999,stroke:#333,stroke-width:2px
-    style B fill:#99ccff,stroke:#333,stroke-width:2px
-    style C fill:#99ff99,stroke:#333,stroke-width:2px
-    style D fill:#ffff99,stroke:#333,stroke-width:2px
-    style E fill:#ffcc99,stroke:#333,stroke-width:2px
+![image info](./workflow_diagram_chatbot_langchain_google_gemini.png)
 
 ## ADMIN Application:
-    - Build Admin Web application where AdminUser can upload the pdf.
-    - The PDF text is split into chunks
-    - Using the Embedding Model of Google embedding-001, create the vector representation of the chunks
-    - Using FAISS, save the vector index locally
+  - Build Admin Web application where AdminUser can upload the pdf.
+  - The PDF text is split into chunks
+  - Using the Embedding Model of Google embedding-001, create the vector representation of the chunks
+  - Using FAISS, save the vector index locally
 
 ### Docker Commands:
 
